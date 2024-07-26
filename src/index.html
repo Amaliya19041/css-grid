@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Pass</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg">
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="container header__container flex">
+      <a href="#" class="header__logo">
+        <svg class="header__img">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav flex">
+        <ul class="header__list flex">
+          <li class="header__item">
+            <a href="#about-the-studio" class="header__link">
+              Про&nbsp;студію
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#our-projects" class="header__link">
+              Наші проекти
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#services" class="header__link">
+              Послуги
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#master-classes" class="header__link">
+              Майстер-класи
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">
+              Контакти
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" aria-label="Найти" class="header__search">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24.9113 22.8136L19.8536 18.3573C21.341 16.3763 22.1457 13.9543 22.1457 11.4068C22.1457 8.35737 20.9904 5.49807 18.9013 3.34219C16.8123 1.18631 14.0293 0 11.0728 0C8.11639 0 5.33342 1.19011 3.24434 3.34219C1.15157 5.49427 0 8.35737 0 11.4068C0 14.4524 1.15527 17.3193 3.24434 19.4714C5.33342 21.6273 8.1127 22.8136 11.0728 22.8136C13.5458 22.8136 15.8932 21.9847 17.8162 20.4562L22.8739 24.9086C22.902 24.9376 22.9354 24.9606 22.9721 24.9762C23.0088 24.9919 23.0482 25 23.088 25C23.1277 25 23.1671 24.9919 23.2038 24.9762C23.2406 24.9606 23.2739 24.9376 23.302 24.9086L24.9113 23.2546C24.9394 23.2257 24.9617 23.1913 24.9769 23.1535C24.9922 23.1156 25 23.0751 25 23.0341C25 22.9931 24.9922 22.9526 24.9769 22.9147C24.9617 22.8769 24.9394 22.8425 24.9113 22.8136ZM16.9193 17.4296C15.3543 19.0379 13.28 19.9238 11.0728 19.9238C8.86565 19.9238 6.79134 19.0379 5.22638 17.4296C3.66511 15.8174 2.80512 13.6805 2.80512 11.4068C2.80512 9.13303 3.66511 6.99236 5.22638 5.384C6.79134 3.77565 8.86565 2.88972 11.0728 2.88972C13.28 2.88972 15.358 3.77184 16.9193 5.384C18.4806 6.99616 19.3406 9.13303 19.3406 11.4068C19.3406 13.6805 18.4806 15.8212 16.9193 17.4296Z" />
+        </svg>
+      </button>
+      <div class="header__menu">
+        <button type="button" aria-label="Открытие меню навигации" class="btn-reset burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container grid">
+        <h1 class="visually-hidden">Сайт фотостудії High Pass</h1>
+        <div class="hero__future flex">
+          <div class="hero__hashtag">
+            #майстерклас
+          </div>
+          <div class="hero__content flex">
+            <span class="hero__master-class">
+              Майстер-клас від&nbsp;Ігора Робова
+            </span>
+            <span class="hero__neon">
+              Неоновий фотосет 2.0 7&nbsp;липня 20:00
+            </span>
+            <button type="button" class="btn-reset btn btn--orange hero__btn">
+              Дізнатися більше
+            </button>
+          </div>
+        </div>
+        <div class="hero__previous flex">
+          <h2 class="hero__title">
+            Роботи учасників попереднього майстер-класу
+          </h2>
+          <div class="hero__previous-big">
+            <picture class="hero__picture">
+              <source srcset="./img/hero__previous-1_320.jpg" media="(max-width: 320px)" class="hero__source">
+              <source srcset="./img/hero__previous-1_768.jpg" media="(max-width: 768px)" class="hero__source">
+              <source srcset="./img/hero__previous-1_1024.jpg" media="(max-width: 1024px)" class="hero__source">
+              <img src="./img/hero__previous-1.jpg" alt="Фото дівчини 1" class="hero__img">
+            </picture>
+          </div>
+          <div class="hero__previous-small flex">
+            <picture class="hero__picture">
+              <source srcset="./img/hero__previous-2_320.jpg" media="(max-width: 320px)" class="hero__source">
+              <source srcset="./img/hero__previous-2_768.jpg" media="(max-width: 768px)" class="hero__source">
+              <source srcset="./img/hero__previous-2_1024.jpg" media="(max-width: 1024px)" class="hero__source">
+              <img src="./img/hero__previous-2.jpg" alt="Фото дівчини 2" class="hero__img">
+            </picture>
+            <picture class="hero__picture">
+              <source srcset="./img/hero__previous-3_320.jpg" media="(max-width: 320px)" class="hero__source">
+              <source srcset="./img/hero__previous-3_768.jpg" media="(max-width: 768px)" class="hero__source">
+              <source srcset="./img/hero__previous-3_1024.jpg" media="(max-width: 1024px)" class="hero__source">
+              <img src="./img/hero__previous-3.jpg" alt="Фото дівчини 3" class="hero__img">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="studio" class="studio">
+      <div class="container studio__container">
+        <h2 class="studio__title">
+          Про&nbsp;студію
+        </h2>
+        <div class="studio__columns flex">
+          <div class="studio__column studio__column--1 flex">
+            <p class="studio__descr">
+              В&nbsp;рамках специфікації сучасних стандартів, інтерактивні прототипи, ініційовані виключно
+              синтетично, обмежені виключно способом мислення. Попередні висновки невтішні:
+              високотехнологічна концепція громадського укладу вимагає від аналізу відповідних умов
+              активізації! Слід зазначити, що&nbsp;семантичний аналіз зовнішніх протидій фіксує необхідність
+              розподілу внутрішніх резервів та&nbsp;ресурсів. Безумовно, межа навчання кадрів надає
+              широкі
+              можливості для першочергових вимог. Повсякденна практика показує, що&nbsp;глибокий рівень
+              занурення
+              передбачає незалежні способи реалізації нових принципів формування матеріально-технічної
+              та&nbsp;кадрової бази. Приємно, громадяни, спостерігати, як&nbsp;явні ознаки інституціоналізації є&nbsp;лише
+              методом політичної участі та&nbsp;порушуючими загальнолюдські норми етики.
+            </p>
+          </div>
+          <div class="studio__column studio__column--2 flex">
+            <picture class="studio__picture">
+              <source srcset="./img/studio__camera_320.jpg" media="(max-width: 576px)" class="studio__source">
+              <source srcset="./img/studio__camera_768.jpg" media="(max-width: 768px)" class="studio__source">
+              <source srcset="./img/studio__camera_1024.jpg" media="(max-width: 1024px)" class="studio__source">
+              <img src="./img/studio__camera.jpg" alt="Фотоапарат" class="studio__img">
+            </picture>
+            <form class="studio__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <div class="studio__newsletter">
+                Підписатися на&nbsp;розсилку
+              </div>
+              <div class="studio__form-input flex">
+                <input class="studio__input" type="email" name="email" placeholder="Email" required>
+                <button type="submit" class="btn-reset btn btn--orange studio__btn">
+                  Відправити
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="projects__title">
+          Наші проекти
+        </h2>
+        <ul class="projects__container grid">
+          <li class="projects__item projects__item--1 flex">
+            <article class="project project--1 flex">
+              <h3 class="visually-hidden">Краєвид</h3>
+              <picture class="project__picture">
+                <source srcset="./img/projects-1_320.jpg" media="(max-width: 576px)" class="project__source">
+                <source srcset="./img/projects-1_768.jpg" media="(max-width: 768px)" class="project__source">
+                <source srcset="./img/projects-1_1024.jpg" media="(max-width: 1024px)" class="project__source">
+                <img src="./img/projects-1.jpg" alt="Краєвид" class="project__img">
+              </picture>
+              <div class="project__hashtag project__hashtag--1">
+                #краєвид
+              </div>
+              <p class="project__descr">
+                Синтетично, змішані з&nbsp;не&nbsp;унікальними даними до&nbsp;ступеня...
+              </p>
+              <time class="project__time" datetime="06-16">
+                16&nbsp;червня
+              </time>
+            </article>
+          </li>
+          <li class="projects__item projects__item--2 flex">
+            <article class="project project--2 flex">
+              <h3 class="visually-hidden">Портрет</h3>
+              <picture class="project__picture">
+                <source srcset="./img/projects-2_320.jpg" media="(max-width: 576px)" class="project__source">
+                <source srcset="./img/projects-2_768.jpg" media="(max-width: 768px)" class="project__source">
+                <source srcset="./img/projects-2_1024.jpg" media="(max-width: 1024px)" class="project__source">
+                <img src="./img/projects-2.jpg" alt="Портрет" class="project__img">
+              </picture>
+              <div class="project__hashtag project__hashtag--2">
+                #портрет
+              </div>
+              <p class="project__descr">
+                У&nbsp;своєму прагненні покращити досвід ми&nbsp;упускаємо, що&nbsp;явні...
+              </p>
+              <time class="project__time" datetime="05-28">
+                28&nbsp;травня
+              </time>
+            </article>
+          </li>
+          <li class="projects__item projects__item--3 flex">
+            <article class="project project--3 flex">
+              <h3 class="visually-hidden">Предмет</h3>
+              <picture class="project__picture">
+                <source srcset="./img/projects-3_320.jpg" media="(max-width: 576px)" class="project__source">
+                <source srcset="./img/projects-3_768.jpg" media="(max-width: 768px)" class="project__source">
+                <source srcset="./img/projects-3_1024.jpg" media="(max-width: 1024px)" class="project__source">
+                <img src="./img/projects-3.jpg" alt="Предмет" class="project__img">
+              </picture>
+              <div class="project__hashtag project__hashtag--3">
+                #предмет
+              </div>
+              <p class="project__descr">
+                Також, висока якість позиційних високотехнологічна концепція суспільного устрою
+              </p>
+              <time class="project__time" datetime="05-14">
+                14&nbsp;травня
+              </time>
+            </article>
+          </li>
+          <li class="projects__item projects__item--4 flex">
+            <article class="project project--4 flex">
+              <div class="project__hashtag project__hashtag--4">
+                #fuji
+              </div>
+              <div class="project__content flex">
+                <time class="project__time project__time--top" datetime="04-09">
+                  9&nbsp;квітня
+                </time>
+                <h3 class="project__subtitle">
+                  Семантичний розбір
+                </h3>
+                <p class="project__descr project__descr--4">
+                  В&nbsp;рамках специфікації сучасних стандартів, інтерактивні прототипи
+                </p>
+                <button type="button" class="btn-reset btn btn--transparent project__btn">
+                  Про проект
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="projects__item projects__item--5 flex">
+            <article class="project project--5 flex">
+              <div class="project__hashtag project__hashtag--5">
+                #проектзабуття
+              </div>
+              <div class="project__content project__content--5 flex">
+                <time class="project__time project__time--top" datetime="03-20">
+                  20&nbsp;березня
+                </time>
+                <h3 class="project__subtitle">
+                  Забуття
+                </h3>
+                <p class="project__descr project__descr--5">
+                  Відіграє важливу роль у&nbsp;формуванні глибокодумних міркувань
+                </p>
+                <button type="button" class="btn-reset btn btn--transparent project__btn">
+                  Про проект
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="projects__item projects__item--6 flex">
+            <article class="project project--6 flex">
+              <h3 class="visually-hidden">Ретуш</h3>
+              <picture class="project__picture">
+                <source srcset="./img/projects-6_320.jpg" media="(max-width: 576px)" class="project__source">
+                <source srcset="./img/projects-6_768.jpg" media="(max-width: 768px)" class="project__source">
+                <source srcset="./img/projects-6_1024.jpg" media="(max-width: 1024px)" class="project__source">
+                <img src="./img/projects-6.jpg" alt="Ретуш" class="project__img">
+              </picture>
+              <div class="project__hashtag project__hashtag--6">
+                #ретуш
+              </div>
+              <p class="project__descr">
+                Як&nbsp;прийнято вважати, багато відомих особистостей і&nbsp;по&nbsp;сьогодні залишаються долею лібералів...
+              </p>
+              <time class="project__time project__time--6" datetime="03-09">
+                9&nbsp;березня
+              </time>
+            </article>
+          </li>
+          <li class="projects__item projects__item--7 flex">
+            <article class="project project--7 flex">
+              <h3 class="visually-hidden">Портрет</h3>
+              <picture class="project__picture">
+                <source srcset="./img/projects-7_320.jpg" media="(max-width: 576px)" class="project__source">
+                <source srcset="./img/projects-7_768.jpg" media="(max-width: 768px)" class="project__source">
+                <source srcset="./img/projects-7_1024.jpg" media="(max-width: 1024px)" class="project__source">
+                <img src="./img/projects-7.jpg" alt="Портрет" class="project__img">
+              </picture>
+              <div class="project__hashtag project__hashtag--7">
+                #портрет
+              </div>
+              <p class="project__descr">
+                З&nbsp;врахуванням міжнародної обстановки, що&nbsp;склалася, нова модель організаційної...
+              </p>
+              <time class="project__time" datetime="03-01">
+                1&nbsp;березня
+              </time>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container contacts__container">
+        <h2 class="contacts__title">
+          Контакти
+        </h2>
+        <div class="contacts__columns flex">
+          <div class="contacts__column contacts__column--1 flex">
+            <div class="contacts__content flex">
+              <h3 class="contacts__subtitle">
+                Студія &laquo;High pass&raquo;
+              </h3>
+              <address class="contacts__address">
+                61057, Харків, вулиця Сумська, будинок&nbsp;10, бізнес-центр &laquo;Аве Плаза&raquo;, поверх&nbsp;8, офіс
+                &#8470;&nbsp;82<a href="tel:+380577601701" class="contacts__link">+3&nbsp;8057 760-17-01</a>
+              </address>
+            </div>
+            <svg class="contacts__location">
+              <use xlink:href="img/sprite.svg#contacts-3"></use>
+            </svg>
+          </div>
+          <div class="contacts__column contacts__column--2 flex">
+            <h3 class="contacts__subtitle contacts__subtitle--black">
+              Залишити заявку
+            </h3>
+            <div class="contacts__descr">
+              Залишіть ваші дані, вказавши в&nbsp;графі &laquo;Коментар&raquo; бажаний час та&nbsp;дату зйомки або
+              іншого заходу
+            </div>
+            <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <div aria-label="Форма для заповнення" class="contacts__form-list flex">
+                <div class="contacts__form-item flex">
+                  <input class="contacts__form-fields" type="text" name="name" placeholder="Ім'я" required>
+                </div>
+                <div class="contacts__form-item flex">
+                  <input class="contacts__form-fields" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="contacts__form-item flex">
+                  <textarea class="contacts__form-fields contacts__form-fields--textarea" name="message"
+                    placeholder="Коментар"></textarea>
+                </div>
+                <div class="contacts__button flex">
+                  <button type="submit" class="btn-reset btn btn--orange contacts__btn">
+                    Відправити
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container flex">
+      <div class="footer__column footer__column-left flex">
+        <a href="#" class="footer__logo">
+          <svg class="footer__img">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <span class="footer__fotostudio">
+          Фотостудія High pass<sup class="reg">&reg;</sup> 2018&ndash;2020
+        </span>
+      </div>
+      <div class="footer__column footer__column-center flex">
+        <p class="footer__descr-center">
+          Яка з&nbsp;моїх фотографій найулюбленіша? Та, яку я&nbsp;збираюся зняти завтра.
+          &copy;&nbsp;Імоджен Каннінгем
+        </p>
+      </div>
+      <div class="footer__column footer__column-right flex">
+        <div class="footer__descr-right">
+          Більше цікавого:
+        </div>
+        <ul class="footer__social-list flex">
+          <li class="footer__social-item flex">
+            <a href="#" aria-label="Сайт Facebook" class="footer__social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none" width="30" height="30">
+                <circle cx="25" cy="25" r="25" />
+                <path d="M29.484 25h-3.235v12h-4.854V25h-2.59v-4.185h2.59v-2.562c0-2.155 1.014-5.538 5.538-5.538l4.065.016V16h-2.956c-1.444 0-1.727.688-1.727 1.694v2.121h4.456L30.694 25z" fill="black"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item flex">
+            <a href="#" aria-label="Сайт Instagram" class="footer__social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="30" height="30">
+                <g transform="translate(0 0)">
+                  <circle cx="12" cy="12" r="11.5" stroke="none" />
+                  <path d="M12 7.2c1.486 0 1.665.006 2.25.033.585.027.986.124 1.335.264.36.146.656.34.97.654.314.314.508.61.654.97.14.349.237.75.264 1.335.027.585.033.764.033 2.25s-.006 1.665-.033 2.25c-.027.585-.124.986-.264 1.335-.146.36-.34.656-.654.97-.314.314-.61.508-.97.654-.349.14-.75.237-1.335.264-.585.027-.764.033-2.25.033s-1.665-.006-2.25-.033c-.585-.027-.986-.124-1.335-.264-.36-.146-.656-.34-.97-.654-.314-.314-.508-.61-.654-.97-.14-.349-.237-.75-.264-1.335-.027-.585-.033-.764-.033-2.25s.006-1.665.033-2.25c.027-.585.124-.986.264-1.335.146-.36.34-.656.654-.97.314-.314.61-.508.97-.654.349-.14.75-.237 1.335-.264.585-.027.764-.033 2.25-.033zm0-1.2c-1.514 0-1.713.006-2.308.034-.6.028-1.014.127-1.37.27-.373.15-.687.36-1.057.73-.37.37-.58.684-.73 1.057-.143.356-.242.77-.27 1.37-.028.595-.034.794-.034 2.308s.006 1.713.034 2.308c.028.6.127 1.014.27 1.37.15.373.36.687.73 1.057.37.37.684.58 1.057.73.356.143.77.242 1.37.27.595.028.794.034 2.308.034s1.713-.006 2.308-.034c.6-.028 1.014-.127 1.37-.27.373-.15.687-.36 1.057-.73.37-.37.58-.684.73-1.057.143-.356.242-.77.27-1.37.028-.595.034-.794.034-2.308s-.006-1.713-.034-2.308c-.028-.6-.127-1.014-.27-1.37-.15-.373-.36-.687-.73-1.057-.37-.37-.684-.58-1.057-.73-.356-.143-.77-.242-1.37-.27-.595-.028-.794-.034-2.308-.034zm0 4.8a3 3 0 100 6 3 3 0 000-6zm0 1.2a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zm3.6-3.3a.9.9 0 110 1.8.9.9 0 010-1.8z" fill="black"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

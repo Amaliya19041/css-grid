@@ -1,0 +1,48 @@
+@import '_variables.scss';
+
+@mixin clearListStyles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin clearBtnStyles {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin btnStyles {
+  display: inline-block;
+  padding: 15.5px 22px;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+}
+
+@mixin sectionTitleStyles {
+  margin: 0;
+  font-family: $second-family;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 104%;
+  color: $almost-black;
+}
+
+@mixin sectionDescrStyles {
+  margin: 0;
+  font-size: 16px;
+  line-height: 137%;
+  color: $dark-milky;
+}
+
+@mixin hashtagStyles {
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+  color: $white;
+  background-color: $almost-black;
+}
